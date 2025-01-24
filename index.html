@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Wellness</title>
+  <!-- Link to Bootstrap (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    .section {
+      padding: 100px 20px;
+      height: 100vh;
+    }
+    #section1 {
+      background: #e8f5e9;
+    }
+    #section2 {
+      background: #e3f2fd;
+    }
+    .section h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #424242;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Health & Wellness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Nutrition</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Fitness</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 1: Nutrition -->
+  <div id="section1" class="section">
+    <h1>Nutrition</h1>
+    <p style="text-align: center;">Learn how balanced nutrition is vital for maintaining a healthy lifestyle. Explore tips on healthy eating and meal planning.</p>
+  </div>
+
+  <!-- Section 2: Fitness -->
+  <div id="section2" class="section">
+    <h1>Fitness</h1>
+    <p style="text-align: center;">Discover effective workout routines and fitness tips to keep your body active and strong.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Health & Wellness. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JavaScript Bundle (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
